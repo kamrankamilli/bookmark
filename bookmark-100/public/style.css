@@ -1,0 +1,379 @@
+@charset "UTF-8";
+body {
+  background:#fff;
+  color:#737373;
+  margin:0;
+  padding:0;
+  font-family: 'Raleway', sans-serif;
+}
+.searchBar::placeholder{
+  color:white;
+}
+
+ a {
+
+  text-decoration:none;
+  transition:opacity 0.2s linear;
+}
+
+a:hover {
+  opacity:0.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin:0;
+  padding:0;
+  font-weight:normal;
+  letter-spacing: 0.15em;
+}
+
+ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+  margin:1em 0;
+}
+
+textarea {
+  display:block;
+  font-size:16px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width:80%;
+  max-width:80%;
+  min-height:8em;
+  margin:1.5em auto;
+  padding:0.6em 1em;
+  border:1px solid #ccc;
+  vertical-align: top;
+}
+div{
+  background-repeat:no-repeat;
+}
+
+input.textField {
+  width:80%;
+  display:block;
+  font-size:16px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding:0.6em 1em;
+  margin:1.5em auto;
+  /* border:5px solid #ccc; */
+  background-color: transparent;
+}
+.header{
+  height:70px;
+  width:100%;
+  background-color:#006fb7;
+}
+.headerInsider{
+  padding:10px;
+}
+
+.logoBox{
+  width: 50px;
+height: 100%;
+display: inline-block;
+}
+.logo{
+  padding: 5px;
+    width: 100%;
+    height: auto;
+}
+.searchBarBox{
+  width: 20%;
+max-height: 100%;
+display: inline-block;
+margin-left: 10%;
+}
+.searchBar{
+  padding: 10px;
+      background: #006fb7bf;
+      width: 100%;
+      color: white;
+
+}
+.addBox{
+  display: inline-block;
+height: 100%;
+margin-left: 5%;
+position: relative;
+}
+.addButton{
+  background-image: url(/images/plus.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+
+    height: 36px;
+    width: 36px;
+    background-color: transparent;
+    border: none;
+        margin-right: 20px;
+
+}
+.addButton:hover{
+  opacity:0.8;
+}
+.backButton{
+  opacity:1;
+  background-image: url(/images/backBut.png);
+  margin-left: 50px;
+margin-top: 15px;
+}
+.addCategoryButton{
+  padding:3px;
+
+}
+.userBox{
+  width:10%;
+  max-height: 100%;
+  float:right;
+  display:inline-block;
+  cursor:pointer;
+}
+.user{
+  padding:5px;
+  height:100%;
+  display:inline-flex;
+}
+.userImage{
+  border-radius: 50%;
+height: 43px;
+
+}
+.userName{
+  margin-top: 10px;
+  margin-left: 5px;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+}
+.categoryBox{
+  height: 200px;
+      display: block;
+      padding: 15px;
+      cursor:pointer;
+}
+.category{
+  padding: 15px;
+  position: relative;
+  background-image: url(/images/back.png);
+  background-size: cover;
+  height: 100%;
+  background-color: #ad5c5c;
+  border-radius: 15px;
+}
+.category:hover .delBox{opacity:1;}
+.bookmark:hover .delBox{opacity:1;}
+.subBookmark:hover .delBox{opacity:1;}
+.categoryName{
+  color: #006fb7;
+    font-weight: 900;
+    font-size: 29px;
+    letter-spacing: 0;
+}
+.categoryName, .bookmarkName, .bookmarkUrl{
+  overflow:hidden;
+}
+.categoryName, .subBookmarkName, .subBookmarkUrl{
+  overflow:hidden;
+}
+.delBox{
+  opacity:0;
+  position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.del{
+  width:100%;
+}
+.categoryIcon{
+  position:absolute;
+  bottom:15px;
+  right:15px;
+  height:30px;
+  width:30px;
+}
+.bookmarkBox{
+  height: 200px;
+  display: block;
+  padding: 15px;
+}
+.bookmark{
+  position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/back.png);
+    background-size: cover;
+    border-radius: 15px;
+}
+.subBookmark{
+  position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/back.png);
+    background-size: cover;
+    border-radius: 15px;
+}
+.bookmarkIcon{
+  position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+}
+.bookmarkNameBox{
+  position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    background: #dadada;
+    border-radius: 0 0 15px 15px;
+}
+p.bookmarkName {
+    color: white;
+    font-weight: 800;
+}
+.bookmarkUrl{
+  color:#8a8989;
+  margin-top: 20px;
+
+}
+.absolutePage{
+  position:absolute;
+  height:100vh;
+  width:100vw;
+  top:0;
+  left:0;
+  display:block;
+  background-color:#006fb7;
+  z-index: 10;
+}
+.loginPage{
+  position:relative;
+  width:100%;
+  height:100vh;
+
+}
+.loginBox{
+  height:400px;
+  width:100%;
+  background-color:white;
+  padding:20px;
+  margin-bottom: 50px;
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  margin:auto;
+  border-radius: 15px;
+}
+.loginLogoBox{
+  width:100%;
+  height:50px;
+  display:block;
+  position:relative;
+}
+.loginError{
+  color:red;
+  font-weight: 500;
+}
+.loginLogo{
+  width:40px;
+  height:40px;
+  display:block;
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  margin:auto;
+}
+.loginHead{
+  text-align: center;
+  margin-bottom:2rem;
+}
+form{
+  text-align:center;
+}
+.loginInput{
+  width:80%;
+  margin-bottom: 1rem;
+  text-align:center;
+  color:#737373;
+}
+.loginButton{
+  margin-bottom: 1rem;
+  display:inline-block;
+  margin-right: 10px;
+}
+#register .loginBox{height:470px;}
+#forgot .loginBox{height:400px;}
+#addBookmark .loginBox, #addCategory .loginBox{height: max-content;
+    width: max-content;
+    background-color: white;
+    padding: 30px;
+    position: absolute;}
+#login{display:block;}
+#register{display:none;}
+#recovery{display:none;}
+
+.home{
+  position:relative;
+  height:100vh;
+  width:100%;
+}
+.add{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:#00000073;
+  z-index: 10;
+  opacity:0;
+  display:none;
+}
+.addBookBox{
+  position:relative;
+  height:100%;
+}
+.dropoutMenu{
+  position: absolute;
+    z-index: 10;
+    background: white;
+    top: 65px;
+    border: 5px solid #006fb7;
+    border-radius: 15px;
+    left: -50px;
+    overflow: hidden;
+    height: 0;
+    width:150px;
+    display:none;
+}
+.addItem{
+      padding: 10px;
+      cursor:pointer;
+}
+.addItem:hover{
+  background:#dadada;
+}
+.addList{
+  margin:0;
+}
+@media only screen and (max-width: 992px) {
+.userBox .userName{display:none;}
+.searchBarBox{width:25vw;}
+}
+@media only screen and (max-width: 465px) {
+.userBox{margin-right: 4vw;}
+}

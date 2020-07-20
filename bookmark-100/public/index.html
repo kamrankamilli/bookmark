@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="bootstrap.min.css" rel="stylesheet" />
+<link href="style.css" rel="stylesheet" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<script>if(window.sessionStorage.login !== 'true'){window.location.href="login.html";}</script>
+<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+
+
+  <title>Bookmark App</title>
+  </head>
+
+  <body>
+
+
+
+
+    <div  class="container-fluid">
+<div class="row">
+
+<div class="header">
+  <div class="headerInsider">
+  <div class="logoBox">
+  <img class="logo" src="/images/logo.png"/>
+    </div>
+
+
+    <div class="searchBarBox">
+  <input class="searchBar" type="text" name="search" placeholder="Search Your Bookmarks"/>
+      </div>
+  <div class="addBox">
+      <button class="addButton btn" type="button"></button>
+      <div class="dropoutMenu">
+        <ul class="addList">
+          <li class="addItem" data-target="addBookmark">Add Bookmark</li>
+          <li class="addItem" data-target="addCategory">Add Category</li>
+        </ul>
+      </div>
+
+
+  </div>
+
+  <a href="login.html" class="userBox">
+  <div class="user">
+    <img class="userImage" src="/images/avatar.png"/>
+    <p class="userName" id="userName"></p>
+
+    </div>
+    </a>
+  </div>
+      </div>
+</div>
+<script>
+var UserFullName = sessionStorage.userName.split(' ');
+document.getElementById('userName').innerHTML = UserFullName[0];
+</script>
+
+<div class="row justify-content-center">
+
+  <div class="home">
+
+    <div class="add">
+    <div class="addBookBox" id="addBookmark">
+    <div class="loginBox">
+      <h3 class="loginHead">Add Bookmark</h3>
+    <form action="" method="get">
+    <input class="loginInput" type="text" name="name" placeholder="Bookmark Name"/><br>
+    <input class="loginInput" type="text" name="url" placeholder="Bookmark Url"/><br>
+    <input class="btn btn-primary addSubmit" data-type="book" type="submit" value="Add"/>
+    </form>
+    </div>
+    </div>
+    <div class="addBookBox" id="addCategory">
+    <div class="loginBox">
+      <h3 class="loginHead">Add Category</h3>
+    <form action="" method="get">
+    <input class="loginInput" type="text" name="name" placeholder="Category Name"/><br>
+    <input class="btn btn-primary addSubmit" data-type="cat" type="submit" value="Add"/>
+    </form>
+    </div>
+    </div>
+    </div>
+
+  <div class="row justify-conten-center mList">
+
+    </div>
+  </div>
+
+
+</div>
+</div>
+<script src="jquery.js"></script>
+      <script src="bootstrap.min.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-database.js"></script>
+
+      <script src="base.js"></script>
+      <script>$(document).ready( bookmarks());</script>
+    </body>
+
+</html>

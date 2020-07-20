@@ -1,0 +1,74 @@
+{
+  "users" : [ {
+    "email" : "kamilli1918@gmail.com",
+    "fullname" : "Kamran Kamilli",
+    "password" : "lvzm1804"
+  }, {
+    "email" : "javid10@mail.ru",
+    "fullname" : "Javid Fataliyev",
+    "password" : 12345
+  }, {
+    "email" : "zaur12@gmail.com",
+    "fullname" : "Zaur Talibli",
+    "password" : 12345
+  }, {
+    "email" : "magnusRulez@gmail.com",
+    "fullname" : "Magnus Karlson",
+    "password" : "101010"
+  }, {
+    "bookmarks" : {
+      "Facebook" : "http://facebook.com",
+      "Firebase" : "http://firebase.com",
+      "Instagram" : "http://instagram.com",
+      "React" : "http://reactjs.org",
+      "The Verge" : "http://theverge.com"
+    },
+    "categories" : {
+      "Sport" : {
+        "-M83haALM4OnQ1gW8CNL" : {
+          "name" : "last",
+          "url" : "http://test.com"
+        },
+        "-M83igBjhdWDvaNNoUoV" : {
+          "name" : "Livescore",
+          "url" : "http://livescore.com"
+        },
+        "-M83mU8X5d9M9hrTI-N1" : {
+          "name" : "ESPN",
+          "url" : "http://espn.com"
+        },
+        "-M83mjTnBhku0yon1e-o" : {
+          "name" : "Sky Sport",
+          "url" : "http://skysport.com"
+        },
+        "-M83n3QcVn2rY563TvJY" : {
+          "name" : "test",
+          "url" : "http://one.com"
+        },
+        "-M83pQHF9FtDJLjpjpsP" : {
+          "name" : "prelast",
+          "url" : "http://apple.com"
+        },
+        "vw43fvrsdg" : {
+          "name" : "some",
+          "url" : "http://some.com"
+        }
+      }
+    },
+    "email" : "admin@example.com",
+    "fullname" : "some",
+    "password" : "121212"
+  }, {
+    "email" : "some@gmail.ru",
+    "fullname" : "Some some",
+    "password" : "123"
+  }, {
+    "email" : "kamilli818@gmail.com",
+    "fullname" : "Kamran Kamilli",
+    "password" : "12345"
+  }, {
+    "email" : "kamilli818@gmail.com",
+    "fullname" : "Kamran Kamilli",
+    "password" : "12345"
+  } ]
+}

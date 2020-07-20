@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="bootstrap.min.css" rel="stylesheet" />
+<link href="style.css" rel="stylesheet" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+
+<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+  <title>Bookmark App</title>
+  </head>
+
+  <body>
+  <div class="container-fluid">
+
+<div class="absolutePage" id="absolute">
+  <div class="row justify-content-center">
+    <div class="col-11 col-md-7 col-lg-4">
+
+
+      <div class="loginPage" id="login">
+        <div class="loginBox">
+          <div class="loginLogoBox">
+            <img class="loginLogo" src="/images/logo.png"/>
+          </div>
+          <h3 class="loginHead">Login</h3>
+          <form>
+            <input type="text" name="email" placeholder="Email" class="loginInput" required/><br>
+            <input type="password" name="password" placeholder="Password" class="loginInput" required/><br>
+            <input class="btn btn-primary loginButton goToHome" id="loginButton" type="submit" value="Login"/>
+            <p class="loginError"></p>
+            <a class="btn btn-secondary loginButton goTo" data-target="register" href="">Registration</a><br>
+            <a class="link goTo" data-target="recovery" href="">Password Reset</a>
+          </form>
+        </div>
+      </div>
+
+      <div class="loginPage" id="register">
+        <div class="loginBox">
+          <div class="loginLogoBox">
+            <img class="loginLogo" src="/images/logo.png"/>
+          </div>
+          <h3 class="loginHead">Registration</h3>
+          <form>
+            <input type="text" name="fullname" placeholder="Name Surname" class="loginInput" required/><br>
+            <input type="text" name="email" placeholder="Email" class="loginInput" required/><br>
+            <input type="password" name="password" placeholder="Password" class="loginInput" required/><br>
+            <input class="btn btn-primary loginButton" id="registerButton" data-target="login" type="submit" value="Register"/><br>
+            <a class=" loginButton goTo" data-target="login"  href="">Back to login</a><br>
+          </form>
+        </div>
+      </div>
+
+      <div class="loginPage" id="recovery">
+        <div class="loginBox">
+          <div class="loginLogoBox">
+            <img class="loginLogo" src="/images/logo.png"/>
+          </div>
+          <h3 class="loginHead">Password Recovery</h3>
+          <form action="" method="POST">
+            <input type="text" name="email" placeholder="Email" class="loginInput" required/><br>
+            <input class="btn btn-primary loginButton goTo" data-target="login"  type="submit" value="Password Reset"/>
+            <a class=" loginButton goTo" data-target="login"  href="">Back to login</a><br>
+          </form>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+</div>
+<script src="jquery.js"></script>
+<script src="bootstrap.min.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-database.js"></script>
+
+
+
+
+<script src="base.js"></script>
+</body>
+
+</html>
